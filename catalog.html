@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,32 +10,16 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
+
   <body>
     <div class="page-wrapper">
       <header class="container page-header header-catalog">
-        <img
-          class="header-logo"
-          src="images/svg/logo-header.svg"
-          alt="Логотип сайта Девайс."
-          width="145"
-          height="36"
-        />
+        <img class="header-logo" src="images/svg/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36" />
         <div class="page-header-user-bar">
-          <form
-            class="search-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label class="visually-hidden" for="header-search"
-              >Поиск по сайту.</label
-            >
-            <input
-              class="header-search"
-              type="search"
-              name="header-search"
-              id="header-search"
-              placeholder="Текст поиска"
-            />
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
+            <input class="header-search" type="search" name="header-search" id="header-search"
+              placeholder="Текст поиска" />
             <button class="button-search" type="button">Найти</button>
           </form>
           <div class="user-bar-wrapper">
@@ -110,11 +95,7 @@
         <div class="main-container">
           <section class="catalog-product container">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-            <form
-              class="catalog-filter"
-              action="https://echo.htmlacademy.ru/"
-              method="get"
-            >
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="catalog-title">Фильтр:</h3>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-subtitle">Стоимость</legend>
@@ -122,41 +103,21 @@
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 119px">
                       <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden"
-                          >Изменить минимальную цену.</span
-                        >
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
                       <button class="range-toggle toggle-max" type="button">
-                        <span class="visually-hidden"
-                          >Изменить максимальную цену.</span
-                        >
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>
                   <div class="range-wrapper-inputs">
-                    <label
-                      class="catalog-filter-label range-input-from"
-                      style="left: 0"
-                    >
+                    <label class="catalog-filter-label range-input-from" style="left: 0">
                       от
-                      <input
-                        class="range-input"
-                        type="number"
-                        value="0"
-                        name="min-price"
-                      />
+                      <input class="range-input" type="number" value="0" name="min-price" />
                     </label>
-                    <label
-                      class="catalog-filter-label range-input-to"
-                      style="left: 119px"
-                    >
+                    <label class="catalog-filter-label range-input-to" style="left: 119px">
                       до
-                      <input
-                        class="range-input"
-                        type="number"
-                        value="5000"
-                        name="max-price"
-                      />
+                      <input class="range-input" type="number" value="5000" name="max-price" />
                     </label>
                   </div>
                 </div>
@@ -166,58 +127,36 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="visually-hidden control-input-checkbox"
-                        type="checkbox"
-                        name="color"
-                        value="black"
-                        checked
-                      /><span class="control-mark"></span>
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="color" value="black"
+                        checked /><span class="control-mark"></span>
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="visually-hidden control-input-checkbox"
-                        type="checkbox"
-                        name="color"
-                        value="white"
-                        checked
-                      /><span class="control-mark"></span>
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="color" value="white"
+                        checked /><span class="control-mark"></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="visually-hidden control-input-checkbox"
-                        type="checkbox"
-                        name="color"
-                        value="blue"
-                      /><span class="control-mark"></span>
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="color"
+                        value="blue" /><span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="visually-hidden control-input-checkbox"
-                        type="checkbox"
-                        name="color"
-                        value="red"
-                      /><span class="control-mark"></span>
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="color"
+                        value="red" /><span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="visually-hidden control-input-checkbox"
-                        type="checkbox"
-                        name="color"
-                        value="pink"
-                      /><span class="control-mark"></span>
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="color"
+                        value="pink" /><span class="control-mark"></span>
                       <span class="control-label">Розовый</span>
                     </label>
                   </li>
@@ -228,24 +167,15 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="visually-hidden control-input-radio"
-                        type="radio"
-                        name="bluetooth"
-                        value="yes"
-                        checked=""
-                      /><span class="control-radio"></span>
+                      <input class="visually-hidden control-input-radio" type="radio" name="bluetooth" value="yes"
+                        checked="" /><span class="control-radio"></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="visually-hidden control-input-radio"
-                        type="radio"
-                        name="bluetooth"
-                        value="no"
-                      /><span class="control-radio"></span>
+                      <input class="visually-hidden control-input-radio" type="radio" name="bluetooth"
+                        value="no" /><span class="control-radio"></span>
                       <span class="control-label">Нет</span>
                     </label>
                   </li>
@@ -277,67 +207,60 @@
                 </div>
               </div>
               <div class="card-product-container">
+                <!--Для метки NEW на тег li повесить класс new-product-->
                 <ul class="card-product-list">
                   <li class="card-product-item">
                     <a class="card-product-link" href="#">
-                      <img
-                        class="product-img"
-                        src="images/catalog-product-1.jpg"
-                        alt="Селфи-палка с телефоном."
-                        width="360"
-                        height="380"
-                      />
-                      <h3 class="product-title">
-                        Любительская<br />
-                        селфи-палка
-                      </h3>
-                      <span class="product-price">500 ₽</span>
+                      <img class="product-img" src="images/catalog-product-1.jpg" alt="Селфи-палка с телефоном."
+                        width="360" height="380" />
+                      <div class="product-text-wrapper">
+                        <h3 class="product-title">
+                          Любительская<br />
+                          селфи-палка
+                        </h3>
+                        <span class="product-price">500 ₽</span>
+                      </div>
+                      <span class="button-link product-about">Подробнее</span>
                     </a>
                   </li>
                   <li class="card-product-item">
                     <a class="card-product-link" href="#">
-                      <img
-                        class="product-img"
-                        src="images/catalog-product-2.jpg"
-                        alt="Селфи-палка модель A1."
-                        width="360"
-                        height="380"
-                      />
-                      <h3 class="product-title">
-                        Профессиональная селфи-палка
-                      </h3>
-                      <span class="product-price">1 500 ₽</span>
+                      <img class="product-img" src="images/catalog-product-2.jpg" alt="Селфи-палка модель A1."
+                        width="360" height="380" />
+                      <div class="product-text-wrapper">
+                        <h3 class="product-title">
+                          Профессиональная селфи-палка
+                        </h3>
+                        <span class="product-price">1 500 ₽</span>
+                      </div>
+                      <span class="button-link product-about">Подробнее</span>
                     </a>
                   </li>
                   <li class="card-product-item">
                     <a class="card-product-link" href="#">
-                      <img
-                        class="product-img"
-                        src="images/catalog-product-3.jpg"
-                        alt="Селфи-палка с гидрозащитой."
-                        width="360"
-                        height="380"
-                      />
-                      <h3 class="product-title">
-                        Непотопляемая<br />
-                        селфи-палка
-                      </h3>
-                      <span class="product-price">2 500 ₽</span>
+                      <img class="product-img" src="images/catalog-product-3.jpg" alt="Селфи-палка с гидрозащитой."
+                        width="360" height="380" />
+                      <div class="product-text-wrapper">
+                        <h3 class="product-title">
+                          Непотопляемая<br />
+                          селфи-палка
+                        </h3>
+                        <span class="product-price">2 500 ₽</span>
+                      </div>
+                      <span class="button-link product-about">Подробнее</span>
                     </a>
                   </li>
                   <li class="card-product-item">
                     <a class="card-product-link" href="#">
-                      <img
-                        class="product-img"
-                        src="images/catalog-product-4.jpg"
-                        alt="Криповатая селфи-палка."
-                        width="360"
-                        height="380"
-                      />
-                      <h3 class="product-title">
-                        Селфи-палка &#171;Следуй за мной&#187;
-                      </h3>
-                      <span class="product-price">1 500 ₽</span>
+                      <img class="product-img" src="images/catalog-product-4.jpg" alt="Криповатая селфи-палка."
+                        width="360" height="380" />
+                      <div class="product-text-wrapper">
+                        <h3 class="product-title">
+                          Селфи-палка &#171;Следуй за мной&#187;
+                        </h3>
+                        <span class="product-price">1 500 ₽</span>
+                      </div>
+                      <span class="button-link product-about">Подробнее</span>
                     </a>
                   </li>
                 </ul>
@@ -346,9 +269,7 @@
                   <span class="pagination-button">Назад</span>
                   <ul class="pagination-list">
                     <li class="pagination-item">
-                      <span class="pagination-link pagination-link-current"
-                        >1</span
-                      >
+                      <span class="pagination-link pagination-link-current">1</span>
                     </li>
                     <li class="pagination-item">
                       <a class="pagination-link" href="#">2</a>
@@ -465,4 +386,5 @@
       </footer>
     </div>
   </body>
+
 </html>
