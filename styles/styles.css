@@ -76,8 +76,9 @@ img {
 }
 
 .container {
-  width: 1160px;
+  width: 1240px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 /*Заголовки*/
@@ -119,8 +120,11 @@ img {
 /**index**/
 /*header*/
 
+.page-header-wrapper {
+  padding-top: 40px;
+}
+
 .page-header {
-  margin: 40px auto 0 auto;
   padding: 45px 60px 22px 60px;
   background-color: #ffe17f;
   position: relative;
@@ -202,7 +206,7 @@ img {
   opacity: 0.3;
 }
 
-.comparasing-link {
+.comparison-link {
   padding-left: 22px;
   background-image: url("../images/svg/header-comparasing.svg");
   background-repeat: no-repeat;
@@ -359,16 +363,26 @@ img {
 /*slider*/
 
 .slider {
-  margin: -38px auto 53px auto;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  overflow: hidden;
   z-index: 2;
+  padding-bottom: 35px;
+  margin-top: -67px;
+}
+
+.slider-controls {
+  display: flex;
+  width: 530px;
+  justify-content: space-between;
+  position: absolute;
+  top: 240px;
+  left: 70px;
+  z-index: 3;
 }
 
 .slider-button {
   border: none;
-  display: flex;
-  position: absolute;
   top: 211px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -376,7 +390,6 @@ img {
   width: 20px;
   height: 60px;
   cursor: pointer;
-  z-index: 3;
 }
 
 .slider-next {
@@ -390,16 +403,40 @@ img {
   background-image: url("../images/svg/slider-arrow.svg");
 }
 
-.slider-inner {
-  width: 300%;
-  transition: transform 0.8s ease;
+.slider-pagination {
+  width: 76px;
+  position: absolute;
+  right: 40px;
+  top: 404px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.slides-radio {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  transition: background-color 0.2s;
   display: flex;
 }
 
+.slides-radio-is-active {
+  background-color: #000000;
+}
+
 .slider-item {
+  display: none;
+  background-image: linear-gradient(#ffe17f 179px, #ffffff 179px);
+  padding-top: 29px;
+}
+
+.slider-item-is-active {
   display: flex;
-  width: 100%;
-  background-image: linear-gradient(#ffe17f 150px, #ffffff 150px);
 }
 
 .slider-image {
@@ -448,7 +485,7 @@ img {
 .slider-features-item {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 12px;
   margin: 0 20px 0 0;
 }
 
@@ -468,61 +505,11 @@ img {
   grid-row-start: 2;
 }
 
-.slider input[type="radio"] {
-  display: none;
-}
-
-.slider-controls {
-  z-index: 3;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  width: 250px;
-  justify-content: flex-end;
-  position: absolute;
-  right: 0;
-  top: 375px;
-}
-
-.slider-controls .slides-radio {
-  padding: 0;
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  transition: background-color 0.2s;
-  margin-left: 20px;
-  display: flex;
-}
-
-.slides-btn-1:checked ~ .slider-controls .slides-radio[for="slides-btn-1"],
-.slides-btn-2:checked ~ .slider-controls .slides-radio[for="slides-btn-2"],
-.slides-btn-3:checked ~ .slider-controls .slides-radio[for="slides-btn-3"] {
-  background-color: #000000;
-}
-
-.slides-btn-1:checked ~ .slider-inner {
-  transform: translateX(0);
-}
-
-.slides-btn-2:checked ~ .slider-inner {
-  transform: translateX(-1160px);
-}
-
-.slides-btn-3:checked ~ .slider-inner {
-  transform: translateX(-2320px);
-}
-
 /*product-type*/
 
 .product-type {
-  margin: 0 auto 82px auto;
-  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .product-type-list {
@@ -597,16 +584,19 @@ img {
 .product-type-text {
   display: block;
   padding: 33px 0 0 0;
-  background-color: #ffffff;
+  background-color: transparent;
+  margin: 0;
+  font-size: 18px;
+line-height: 24px;
 }
 
 /*tabs*/
 .tabs-advantages {
-  background-image: linear-gradient(#ffffff 102px, #f0f0f0 102px);
+  background-image: linear-gradient(#ffffff 149px, #f0f0f0 149px);
   width: 100%;
+  padding-top: 47px;
   padding-bottom: 72px;
   margin: 0;
-  margin-bottom: 71px;
 }
 
 .tabs-wrapper {
@@ -618,7 +608,7 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 63px 0 30px 2px;
+  padding: 64px 0 30px 0;
   border-right: #000000 7px solid;
 }
 
@@ -639,7 +629,7 @@ img {
 }
 
 .tabs-contents {
-  padding: 74px 278px 55px 116px;
+  padding: 73px 278px 55px 116px;
   position: relative;
 }
 
@@ -681,7 +671,7 @@ img {
 }
 
 .tabs-title {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .tabs-text {
@@ -694,13 +684,14 @@ img {
 
 /*Заказ редких товаров*/
 .special-delivery {
-  margin-bottom: 70px;
+  padding-top: 71px;
+  padding-bottom: 35px;
 }
 
 .special-delivery-link {
   width: 100%;
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 41px 140px 36px 145px;
   text-decoration: none;
   color: #000000;
@@ -750,7 +741,8 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  padding-top: 34px;
+  padding-bottom: 40px;
 }
 
 .about-us {
@@ -775,13 +767,14 @@ img {
 }
 
 .about-us-text {
+  margin: 0;
   margin-bottom: 30px;
 }
 
 .transport-company-list {
   list-style-type: none;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -841,7 +834,7 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .schedule-item {
@@ -855,7 +848,7 @@ img {
 /*подписка на рассылку*/
 .newsletter {
   background-color: #f0f0f0;
-  padding: 64px 0 56px 0;
+  padding: 65px 0 57px 0;
 }
 
 .newsletter-inner {
@@ -943,7 +936,7 @@ img {
   width: 80px;
   height: 7px;
   position: absolute;
-  left: 1px;
+  left: 41px;
   top: 104px;
   background-color: #ffc700;
 }
@@ -951,7 +944,7 @@ img {
 .footer-logo {
   position: absolute;
   fill: #ffc700;
-  left: 1px;
+  left: 41px;
   top: -71px;
   text-decoration: none;
   color: #ffffff;

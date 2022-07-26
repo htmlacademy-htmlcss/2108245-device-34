@@ -13,91 +13,91 @@
 
   <body>
     <div class="page-wrapper">
-      <header class="container page-header">
-        <img class="header-logo" src="images/svg/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36" />
-        <div class="page-header-user-bar">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
-            <input class="header-search" type="search" name="header-search" id="header-search"
-              placeholder="Текст поиска" />
-            <button class="button-search" type="button">Найти</button>
-          </form>
-          <div class="user-bar-wrapper">
-            <a class="header-link auth-link" href="#">Войти</a>
-            <a class="header-link comparasing-link" href="#">Сравнить</a>
-            <button class="header-link basket-link" type="button">Корзина</button>
+      <div class="container page-header-wrapper">
+        <header class="page-header">
+          <img class="header-logo" src="images/svg/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36" />
+          <div class="page-header-user-bar">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
+              <input class="header-search" type="search" name="header-search" id="header-search"
+                placeholder="Текст поиска" />
+              <button class="button-search" type="button">Найти</button>
+            </form>
+            <div class="user-bar-wrapper">
+              <a class="header-link auth-link" href="#">Войти</a>
+              <a class="header-link comparison-link" href="#">Сравнить</a>
+              <button class="header-link basket-link" type="button">Корзина</button>
+            </div>
           </div>
-        </div>
-        <nav class="navigation">
-          <button class="navigation-link catalog-button" type="button">
-            Каталог товаров
-            <span class="catalog-dropdown"></span>
-          </button>
-          <div class="popover-menu">
-            <ul class="menu-sublist">
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#">
-                  Виртуальная реальность
-                </a>
-              </li>
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="catalog.html">
-                  Моноподы для селфи
-                </a>
-              </li>
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Экшн-камеры </a>
-              </li>
-            </ul>
-            <ul class="menu-sublist">
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Фитнес-браслеты </a>
-              </li>
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Умные часы </a>
-              </li>
-            </ul>
-            <ul class="menu-sublist">
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Квадрокоптеры </a>
-              </li>
-            </ul>
-          </div>
-          <div class="navigation-list-wrapper">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+          <nav class="navigation">
+            <button class="navigation-link catalog-button" type="button">
+              Каталог товаров
+              <span class="catalog-dropdown"></span>
+            </button>
+            <div class="popover-menu">
+              <ul class="menu-sublist">
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#">
+                    Виртуальная реальность
+                  </a>
+                </li>
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="catalog.html">
+                    Моноподы для селфи
+                  </a>
+                </li>
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Экшн-камеры </a>
+                </li>
+              </ul>
+              <ul class="menu-sublist">
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Фитнес-браслеты </a>
+                </li>
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Умные часы </a>
+                </li>
+              </ul>
+              <ul class="menu-sublist">
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Квадрокоптеры </a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation-list-wrapper">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Гарантия</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
       <main>
         <h1 class="visually-hidden">Интернет магазин «Device».</h1>
         <section class="container slider">
           <h2 class="visually-hidden">Популярные товары.</h2>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-          <input class="slides-btn slides-btn-1" type="radio" id="slides-btn-1" name="toggle" checked />
-          <input class="slides-btn slides-btn-2" type="radio" id="slides-btn-2" name="toggle" />
-          <input class="slides-btn slides-btn-3" type="radio" id="slides-btn-3" name="toggle" />
           <div class="slider-controls">
-            <label class="slides-radio" for="slides-btn-1"><span class="visually-hidden">1 слайд</span></label>
-            <label class="slides-radio" for="slides-btn-2"><span class="visually-hidden">2 слайд</span></label>
-            <label class="slides-radio" for="slides-btn-3"><span class="visually-hidden">3 слайд</span></label>
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
           </div>
-          <div class="slider-inner">
-            <div class="slider-item">
+          <div class="slider-pagination">
+              <button class="slides-radio slides-radio-is-active" type="button"><span class="visually-hidden">1 слайд</span></button>
+              <button class="slides-radio" type="button"><span class="visually-hidden">2 слайд</span></button>
+              <button class="slides-radio" type="button"><span class="visually-hidden">3 слайд</span></button>
+          </div>
+            <div class="slider-item slider-item-is-active">
               <img class="slider-image" src="images/device-1.png" alt="Квадрокоптер." width="560" height="560" />
               <div class="slider-desc-wrapper">
                 <span class="slider-number">01</span>
@@ -170,39 +170,38 @@
                 </dl>
               </div>
             </div>
-          </div>
         </section>
         <section class="container product-type">
           <h2 class="visually-hidden">Типы товаров.</h2>
           <ul class="product-type-list">
             <li class="product-type-item">
               <a class="product-type-link product-virtual" href="#">
-                <span class="product-type-text">Виртуальная реальность</span>
+                <h3 class="product-type-text">Виртуальная реальность</h3>
               </a>
             </li>
             <li class="product-type-item">
               <a class="product-type-link product-monopod" href="catalog.html">
-                <span class="product-type-text">Моноподы для&nbsp;селфи</span>
+                <h3 class="product-type-text">Моноподы для&nbsp;селфи</h3>
               </a>
             </li>
             <li class="product-type-item">
               <a class="product-type-link product-action" href="#">
-                <span class="product-type-text">Экшн-камеры</span>
+                <h3 class="product-type-text">Экшн-камеры</h3>
               </a>
             </li>
             <li class="product-type-item">
               <a class="product-type-link product-fitness" href="#">
-                <span class="product-type-text">Фитнес-браслеты</span>
+                <h3 class="product-type-text">Фитнес-браслеты</h3>
               </a>
             </li>
             <li class="product-type-item">
               <a class="product-type-link product-clock" href="#">
-                <span class="product-type-text">Умные часы</span>
+                <h3 class="product-type-text">Умные часы</h3>
               </a>
             </li>
             <li class="product-type-item">
               <a class="product-type-link product-quadrocopter" href="#">
-                <span class="product-type-text">Квадрокоптеры</span>
+                <h3 class="product-type-text">Квадрокоптеры</h3>
               </a>
             </li>
           </ul>
