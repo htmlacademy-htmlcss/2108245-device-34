@@ -1052,15 +1052,10 @@ line-height: 24px;
 }
 
 /**Catalog**/
-/*header*/
-.header-catalog {
-  margin-top: 38px;
-}
-
 /*breadcrumbs*/
 
 .breadcrumbs {
-  padding: 36px 60px 34px 60px;
+  padding: 36px 100px 34px 100px;
 }
 
 .breadcrumbs-title {

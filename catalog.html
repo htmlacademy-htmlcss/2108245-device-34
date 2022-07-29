@@ -13,70 +13,72 @@
 
   <body>
     <div class="page-wrapper">
-      <header class="container page-header header-catalog">
-        <img class="header-logo" src="images/svg/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36" />
-        <div class="page-header-user-bar">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
-            <input class="header-search" type="search" name="header-search" id="header-search"
-              placeholder="Текст поиска" />
-            <button class="button-search" type="button">Найти</button>
-          </form>
-          <div class="user-bar-wrapper">
-            <a class="header-link auth-link" href="#">Коля Петухов</a>
-            <a class="header-link exit-link" href="#">Выйти</a>
-            <a class="header-link comparasing-link" href="#">Сравнить</a>
-            <button class="header-link basket-link" type="button">Корзина</button>
+      <div class="container page-header-wrapper">
+        <header class="page-header">
+          <img class="header-logo" src="images/svg/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36" />
+          <div class="page-header-user-bar">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
+              <input class="header-search" type="search" name="header-search" id="header-search"
+                placeholder="Текст поиска" />
+              <button class="button-search" type="button">Найти</button>
+            </form>
+            <div class="user-bar-wrapper">
+              <a class="header-link auth-link" href="#">Коля Петухов</a>
+              <a class="header-link exit-link" href="#">Выйти</a>
+              <a class="header-link comparison-link" href="#">Сравнить</a>
+              <button class="header-link basket-link" type="button">Корзина</button>
+            </div>
           </div>
-        </div>
-        <nav class="navigation">
-          <button class="navigation-link catalog-button" type="button">
-            Каталог товаров
-            <span class="catalog-dropdown"></span>
-          </button>
-          <div class="popover-menu">
-            <ul class="menu-sublist">
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#">
-                  Виртуальная реальность
-                </a>
-              </li>
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Моноподы для селфи </a>
-              </li>
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Экшн-камеры </a>
-              </li>
-            </ul>
-            <ul class="menu-sublist">
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Фитнес-браслеты </a>
-              </li>
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Умные часы </a>
-              </li>
-            </ul>
-            <ul class="menu-sublist">
-              <li class="menu-sublist-item">
-                <a class="menu-sublist-link" href="#"> Квадрокоптеры </a>
-              </li>
-            </ul>
-          </div>
-          <div class="navigation-list-wrapper">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+          <nav class="navigation">
+            <button class="navigation-link catalog-button" type="button">
+              Каталог товаров
+              <span class="catalog-dropdown"></span>
+            </button>
+            <div class="popover-menu">
+              <ul class="menu-sublist">
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#">
+                    Виртуальная реальность
+                  </a>
+                </li>
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Моноподы для селфи </a>
+                </li>
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Экшн-камеры </a>
+                </li>
+              </ul>
+              <ul class="menu-sublist">
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Фитнес-браслеты </a>
+                </li>
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Умные часы </a>
+                </li>
+              </ul>
+              <ul class="menu-sublist">
+                <li class="menu-sublist-item">
+                  <a class="menu-sublist-link" href="#"> Квадрокоптеры </a>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation-list-wrapper">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Гарантия</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
       <main>
         <section class="container breadcrumbs">
           <h1 class="page-title breadcrumbs-title">Моноподы для селфи</h1>
