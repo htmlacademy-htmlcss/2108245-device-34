@@ -1,42 +1,56 @@
-document.addEventListener('DOMContentLoaded', () => { // Структура страницы загружена и готова к взаимодействию
+const tabsButtons = document.querySelectorAll('.tabs-caption');
+const tabsItems = document.querySelectorAll('.tabs-content');
 
-    const tabs = () => { // объявляем основную функцию для вкладок, чтобы вся логика была в одном месте
-      const head = document.querySelector('.tabs-head') // ищем элемент с кнопками и записываем в константу
-      const body = document.querySelector('.tabs-contents') // ищем элемент с контентом и записываем в константу
-  
-      const getActiveTabName = () => { // объявляем функцию для получения названия активной вкладки
-        return head.querySelector('.tabs-caption-is-active').dataset.tab // возвращаем значение data-tab активной кнопки
-      }
-  
-      const setActiveContent = () => { // объявляем функцию для установки активного элемента контента
-        if (body.querySelector('.tabs-content-is-active')) { // если уже есть активный элемент контента
-          body.querySelector('.tabs-content-is-active').classList.remove('tabs-content-is-active') // то скрываем его
-        }
-        body.querySelector(`[data-tab=${getActiveTabName()}]`).classList.add('tabs-content-is-active') // затем ищем элемент контента, у которого значение data-tab совпадает со значением data-tab активной кнопки и отображаем его
-      }
-  
-      // проверяем при загрузке страницы, есть ли активная вкладка
-      if (!head.querySelector('.tabs-caption-is-active')) {  // если активной вкладки нет
-        head.querySelector('.tabs-caption').classList.add('tabs-caption-is-active') // то делаем активной по-умолчанию первую вкладку
-      }
-  
-      setActiveContent(getActiveTabName()) // устанавливаем активный элемент контента в соответствии с активной кнопкой при загрузке страницы
-  
-      head.addEventListener('click', e => { // при клике на .tabs__head
-        const caption = e.target.closest('.tabs-caption') // узнаем, был ли клик на кнопке
-        if (!caption) return // если клик был не на кнопке, то прерываем выполнение функции
-        if (caption.classList.contains('tabs-caption-is-active')) return // если клик был на активной кнопке, то тоже прерываем выполнение функции и ничего не делаем
-  
-        if (head.querySelector('.tabs-caption-is-active')) { // если уже есть активная кнопка
-          head.querySelector('.tabs-caption-is-active').classList.remove('tabs-caption-is-active') // то удаляем ей активный класс
-        }
-  
-        caption.classList.add('tabs-caption-is-active') // затем добавляем активный класс кнопке, на которой был клик
-  
-        setActiveContent(getActiveTabName()) // устанавливаем активный элемент контента в соответствии с активной кнопкой
-      })
-    }
-  
-    tabs() // вызываем основную функцию
-  
-  })
+tabsButtons.forEach((button, index) => {
+  button.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    document.querySelector('.tabs-caption.is-active').classList.remove('is-active');
+    document.querySelector('.tabs-content.is-active').classList.remove('is-active');
+    button.classList.add('is-active');
+    tabsItems[index].classList.add('is-active');
+  });
+})
+
+const sliderButtons = document.querySelectorAll('.slides-radio');
+const sliderItems = document.querySelectorAll('.slider-item');
+
+const sliderButtonNext = document.querySelector('.slider-next');
+const sliderButtonPrev = document.querySelector('.slider-prev');
+
+let index = 0;
+
+sliderButtons.forEach((button, index) => {
+  button.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    document.querySelector('.slides-radio.is-active').classList.remove('is-active');
+    document.querySelector('.slider-item.is-active').classList.remove('is-active');
+    button.classList.add('is-active');
+    sliderItems[index].classList.add('is-active');
+  });
+})
+
+sliderButtonNext.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  sliderButtons[index].classList.remove('is-active');
+  sliderItems[index].classList.remove('is-active');
+  if (index === sliderButtons.length - 1) {
+    index = 0;
+  } else {
+    index = index + 1;
+  }
+  sliderButtons[index].classList.add('is-active');
+  sliderItems[index].classList.add('is-active');
+});
+
+sliderButtonPrev.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  sliderButtons[index].classList.remove('is-active');
+  sliderItems[index].classList.remove('is-active');
+  if (!index) {
+    index = sliderButtons.length - 1;
+  } else {
+    index = index - 1;
+  }
+  sliderButtons[index].classList.add('is-active');
+  sliderItems[index].classList.add('is-active');
+});
