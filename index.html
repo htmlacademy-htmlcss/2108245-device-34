@@ -30,7 +30,29 @@
             <div class="user-bar-wrapper">
               <div class="auth-link-wrapper"><a class="header-link auth-link" href="#">Войти</a></div>
               <a class="header-link comparison-link" href="#">Сравнить</a>
-              <button class="header-link basket-link" type="button">Корзина</button>
+                <div class="basket-container">
+                  <button class="header-link basket-link" type="button">Корзина</button>
+                  <div class="basket-tooltip">
+                    <h2 class="visually-hidden">Корзина.</h2>
+                    <ul class="basket-list">
+                      <li class="basket-item">
+                        <img class="basket-item-img" src="images/catalog-product-1.jpg" alt="Селфи-палка для любителей." width="39px" height="43px">
+                        <h3 class="basket-item-title">Любительская селфи-палка</h3>
+                        <button class="basket-item-delete"><span class="visually-hidden">Удалить товар из корзины.</span></button>
+                      </li>
+                      <li class="basket-item">
+                        <img class="basket-item-img" src="images/catalog-product-2.jpg" alt="Селфи-палка для любителей." width="39px" height="43px">
+                        <h3 class="basket-item-title">Профессиональная селфи-палка</h3>
+                        <button class="basket-item-delete"><span class="visually-hidden">Удалить товар из корзины.</span></button>
+                      </li>
+                    </ul>
+                    <div class="basket-summary">
+                      <p class="basket-summary-text count">Товаров: 2</p>
+                      <p class="basket-summary-text total">Сумма: 2000 ₽</p>
+                    </div>
+                    <a class="basket-tooltip-link" href="#">Открыть корзину</a>
+                  </div>
+                </div>
             </div>
           </div>
           <nav class="navigation">
