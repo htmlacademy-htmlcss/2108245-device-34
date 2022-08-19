@@ -17,10 +17,11 @@ const sliderItems = document.querySelectorAll('.slider-item');
 const sliderButtonNext = document.querySelector('.slider-next');
 const sliderButtonPrev = document.querySelector('.slider-prev');
 
-let index = 0;
+let slideIndex = 0;
 
 sliderButtons.forEach((button, index) => {
   button.addEventListener('click', (evt) => {
+    slideIndex = index;
     evt.preventDefault();
     document.querySelector('.slides-radio.is-active').classList.remove('is-active');
     document.querySelector('.slider-item.is-active').classList.remove('is-active');
@@ -31,26 +32,48 @@ sliderButtons.forEach((button, index) => {
 
 sliderButtonNext.addEventListener('click', (evt) => {
   evt.preventDefault();
-  sliderButtons[index].classList.remove('is-active');
-  sliderItems[index].classList.remove('is-active');
-  if (index === sliderButtons.length - 1) {
-    index = 0;
+  sliderButtons[slideIndex].classList.remove('is-active');
+  sliderItems[slideIndex].classList.remove('is-active');
+  if (slideIndex === sliderButtons.length - 1) {
+    slideIndex = 0;
   } else {
-    index = index + 1;
+    slideIndex = slideIndex + 1;
   }
-  sliderButtons[index].classList.add('is-active');
-  sliderItems[index].classList.add('is-active');
+  sliderButtons[slideIndex].classList.add('is-active');
+  sliderItems[slideIndex].classList.add('is-active');
 });
 
 sliderButtonPrev.addEventListener('click', (evt) => {
   evt.preventDefault();
-  sliderButtons[index].classList.remove('is-active');
-  sliderItems[index].classList.remove('is-active');
-  if (!index) {
-    index = sliderButtons.length - 1;
+  sliderButtons[slideIndex].classList.remove('is-active');
+  sliderItems[slideIndex].classList.remove('is-active');
+  if (!slideIndex) {
+    slideIndex = sliderButtons.length - 1;
   } else {
-    index = index - 1;
+    slideIndex = slideIndex - 1;
   }
-  sliderButtons[index].classList.add('is-active');
-  sliderItems[index].classList.add('is-active');
+  sliderButtons[slideIndex].classList.add('is-active');
+  sliderItems[slideIndex].classList.add('is-active');
+});
+
+
+const modalOpenBtn = document.querySelector('.special-delivery-link');
+const modal = document.querySelector('.modal-container');
+const modalCloseBtn = document.querySelector('.modal-close-button');
+
+modalOpenBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+modal.classList.add('is-open');
+});
+
+modalCloseBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.remove('is-open');
+  });
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
+    evt.preventDefault();
+    modal.classList.remove('is-open');
+  }
 });
