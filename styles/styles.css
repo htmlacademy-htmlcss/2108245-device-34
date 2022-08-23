@@ -101,7 +101,7 @@ img {
   text-decoration: none;
   color: #000000;
   text-align: center;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -499,6 +499,7 @@ img {
 .basket-summary-text {
   margin: 0;
 }
+
 .total {
   text-align: end;
 }
@@ -555,7 +556,7 @@ img {
 .navigation-link {
   text-decoration: none;
   color: #000000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -580,7 +581,7 @@ img {
   z-index: 3;
   text-decoration: none;
   color: #000000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -657,6 +658,7 @@ img {
 }
 
 /*Всплывающее меню*/
+
 .popover-menu {
   display: none;
   position: absolute;
@@ -672,6 +674,7 @@ img {
 
 .catalog-sublist-container {
   align-self: flex-start;
+  position: relative;
 }
 
 .catalog-button:active ~ .popover-menu,
@@ -865,13 +868,17 @@ img {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -21px;
 }
 
 .slider-features-item {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  margin: 0 21px 0 0;
+  margin: 0 21px 21px 0;
+  max-width: 180px;
+  min-width: 100px;
+  align-content: flex-start;
 }
 
 .slider-features-item:nth-child(3n) {
@@ -913,11 +920,11 @@ img {
 }
 
 .product-type-link {
-  padding: 160px 0 0 0;
+  padding: 193px 0 0 0;
   background-color: transparent;
   text-decoration: none;
   color: #000000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.02em;
@@ -982,7 +989,7 @@ img {
 
 .product-type-text {
   display: flex;
-  padding: 33px 0 0 0;
+  padding: 0;
   background-color: transparent;
   margin: 0;
   font-size: 18px;
@@ -990,6 +997,7 @@ img {
 }
 
 /*tabs*/
+
 .tabs-advantages {
   background-image: linear-gradient(#ffffff 149px, #f0f0f0 149px);
   width: 100%;
@@ -1111,6 +1119,7 @@ img {
 }
 
 /*Заказ редких товаров*/
+
 .special-delivery {
   padding-top: 70px;
   padding-bottom: 35px;
@@ -1123,7 +1132,7 @@ img {
   padding: 41px 140px 36px 145px;
   text-decoration: none;
   color: #000000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
@@ -1190,6 +1199,7 @@ img {
 }
 
 /*Контакты и о нас*/
+
 .contacts-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1299,9 +1309,6 @@ img {
 }
 
 .schedule-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   margin-bottom: 29px;
 }
 
@@ -1314,6 +1321,7 @@ img {
 }
 
 /*подписка на рассылку*/
+
 .newsletter {
   background-color: #f0f0f0;
   padding: 65px 0 57px 0;
@@ -1393,7 +1401,7 @@ img {
   max-width: 510px;
   min-width: 253px;
   padding: 14px 20px 14px 26px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1434,6 +1442,7 @@ img {
 }
 
 /*footer*/
+
 .page-footer {
   margin-top: auto;
   background-color: #444444;
@@ -1454,7 +1463,7 @@ img {
   height: 7px;
   position: absolute;
   left: 0;
-  top: 104px;
+  bottom: 31px;
   background-color: #ffc700;
 }
 
@@ -1512,13 +1521,13 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 32px;
+  gap: 5px 32px;
 }
 
 .navigation-footer-link {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1987,6 +1996,7 @@ img {
   display: flex;
   padding: 0;
   flex-wrap: wrap;
+  margin-bottom: -10px;
 }
 
 .breadcrumbs-link {
@@ -2020,6 +2030,7 @@ img {
 .breadcrumbs-item {
   position: relative;
   margin-right: 37px;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs-item::after {
@@ -2060,7 +2071,7 @@ img {
 }
 
 .catalog-title {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   line-height: 19px;
   font-size: 16px;
@@ -2384,6 +2395,7 @@ img {
   width: 11px;
   height: 10px;
   align-self: center;
+  outline: none;
 }
 
 .card-toggle-sorting::after {
@@ -2455,11 +2467,9 @@ img {
 }
 
 .product-img {
-  margin-bottom: 29px;
+  display: flex;
+  margin-bottom: 33px;
   position: relative;
-}
-
-.product-img img {
   background-color: #f0f0f0;
 }
 
@@ -2558,7 +2568,7 @@ img {
   right: 27px;
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 16px;
@@ -2573,7 +2583,7 @@ img {
   width: 100%;
   text-decoration: none;
   text-align: center;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -2617,7 +2627,7 @@ img {
 
 .pagination-button {
   padding: 25px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -2650,7 +2660,7 @@ img {
   text-decoration: none;
   color: inherit;
   opacity: 0.3;
-  padding: 5px 0;
+  padding: 5px;
   outline: none;
 }
 
